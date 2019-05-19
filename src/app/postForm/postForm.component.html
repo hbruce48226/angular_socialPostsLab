@@ -1,0 +1,32 @@
+<div>
+    <h2>Title</h2>
+    <input type='text' [(ngModel)]='titleInput' />
+    <p>{{ bodyReturn }}</p>
+
+    <h2>Thought</h2>
+    <textarea [(ngModel)]='bodyInput'></textarea>
+    <button (click)='submitButton(titleInput.value, bodyInput.value)'>Add Button</button>
+</div>
+
+
+<!-- <input type='text' [(ngModel)]='textToReverse' (input)='reverseText()' />
+<p>{{ reversedInput }}</p> -->
+
+<!--     
+    title = 'reverse';
+    textToReverse: string = '';
+    reversedInput: string;
+
+    reverseText = () => {
+        this.reversedInput = this.textToReverse.split('').reverse().join('');
+    };
+ -->
+
+
+<!--<div>
+//     <h2>{{ DONKEY.title }}</h2>
+//     <span>
+//         <p>{{ DONKEY.body }}</p>
+//         <button (click)='deleteButton()'>x</button>
+//     </span>
+// </div> -->

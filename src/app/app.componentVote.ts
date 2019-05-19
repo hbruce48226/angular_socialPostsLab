@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 interface Post {
-  vote: boolean;
   title: string;
   body: string;
   delete: boolean;
@@ -28,9 +27,9 @@ export class socialPosts {
   }
 
   listOfPosts = [
-    {vote: true, title: 'dog', body: 'i am cute and fluffy', delete: true},
-    {vote: true, title: 'cat', body: 'i am evil and awful', delete: true},
-    {vote: true, title: 'solitude', body: 'on solitude, my thoughts are...', delete: true}
+    {title: 'dog', body: 'i am cute and fluffy', delete: true},
+    {title: 'cat', body: 'i am evil and awful', delete: true},
+    {title: 'solitude', body: 'on solitude, my thoughts are...', delete: true}
 ];
 
 onDelete = (event) => {
